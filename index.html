@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendarz</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;1,600&family=Open+Sans:ital,wght@0,600;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- ROUNDED BOX -->
+    <div class="box">
+
+        <!-- Title -->
+        <h2 class="box__title">Kalendarz chemioterapii</h2>
+
+        <!-- NAV -->
+        <div class="cycle">
+            <button class="cycle__button cycle__button--prev cycle__col" aria-label="Poprzedni cykl"></button>
+            <p class="cycle__text cycle__col">Cykl 1 (z 2) <span class="cycle__days">21 dni</span></p>
+            <button class="cycle__button cycle__button--next cycle__col cycle__button--active"
+                aria-label="Następny cykl"></button>
+        </div>
+        <!-- END NAV -->
+
+        <!-- SCROLL CONTAINER -->
+        <div class="box__scroll">
+
+            <!-- CALENDAR -->
+            <div class="calendar">
+
+                <!-- HEADER -->
+                <div class="calendar__row">
+                    <p class="calendar__title">Terapeutyk</p>
+                    <p class="calendar__title">Dzień podania dawki</p>
+                </div>
+                <!-- END HEADER -->
+
+                <!-- ROW -->
+                <div class="calendar__row">
+                    <h3 class="calendar__name">Bortezomib</h3>
+                    <div class="calendar__selection">
+                        <ol class="calendar__days">
+                            <li class="calendar__day calendar__day--start"><span class="calendar__day-text">1</span>
+                            </li>
+                            <li class="calendar__day"><span class="calendar__day-text">2</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">3</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">4</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">5</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">6</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">7</span></li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day calendar__day--start"><span class="calendar__day-text">8</span>
+                            </li>
+                            <li class="calendar__day"><span class="calendar__day-text">9</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">10</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">11</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">12</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">13</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">14</span></li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day calendar__day--start"><span class="calendar__day-text">15</span>
+                            </li>
+                            <li class="calendar__day"><span class="calendar__day-text">16</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">17</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">18</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">19</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">21</span></li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day calendar__day--start"><span class="calendar__day-text">22</span>
+                            </li>
+                            <li class="calendar__day"><span class="calendar__day-text">23</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">24</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">25</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">26</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">27</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">28</span></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- END ROW -->
+
+                <!-- ROW -->
+                <div class="calendar__row">
+                    <h3 class="calendar__name">
+                        Deksametazon
+                    </h3>
+                    <div class="calendar__selection">
+                        <ol class="calendar__days">
+                            <li class="calendar__day calendar__day--start"><span class="calendar__day-text">1</span>
+                            </li>
+                            <li class="calendar__day calendar__day--end"><span class="calendar__day-text">2</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">3</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">4</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">5</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">6</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">7</span></li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day"><span class="calendar__day-text">8</span></li>
+                            <li class="calendar__day calendar__day--start"><span class="calendar__day-text">9</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">10</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">11</span>
+                            </li>
+                            <li class="calendar__day calendar__day--end"><span class="calendar__day-text">12</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">13</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">14</span></li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day"><span class="calendar__day-text">15</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">16</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">17</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">18</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">19</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">21</span></li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day"><span class="calendar__day-text">22</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">23</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">24</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">25</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">26</span></li>
+                            <li class="calendar__day"><span class="calendar__day-text">27</span></li>
+                            <li class="calendar__day calendar__day--end"><span class="calendar__day-text">28</span></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- END ROW -->
+
+                <!-- ROW -->
+                <div class="calendar__row">
+                    <h3 class="calendar__name">Bendamustyna</h3>
+                    <div class="calendar__selection">
+                        <ol class="calendar__days">
+                            <li class="calendar__day calendar__day--start"><span class="calendar__day-text">1</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">2</span></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">3</span></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">4</span></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">5</span></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">6</span></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">7</span></li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">8</span></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">9</span></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">10</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">11</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">12</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">13</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">14</span>
+                            </li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">15</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">16</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">17</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">18</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">19</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">21</span>
+                            </li>
+                            <li class="calendar__line"></li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">22</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">23</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">24</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">25</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">26</span>
+                            </li>
+                            <li class="calendar__day calendar__day--next"><span class="calendar__day-text">27</span>
+                            </li>
+                            <li class="calendar__day calendar__day--end"><span class="calendar__day-text">28</span></li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- END ROW -->
+
+            </div>
+            <!-- END CALENDAR -->
+        </div>
+        <!-- END SCROLL -->
+    </div>
+    <!-- END ROUNDED BOX -->
+</body>
+
+</html>
